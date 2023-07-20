@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --width-max: 100vw;
+  --width-content: 280px;
+  --font-family-primary: 'Urbanist', sans-serif;
+  --font-size-small: 15px;
+  --font-size-normal: 16px;
+  --font-size-medium: 17px;
+  --font-size-large: 32p;
+  --font-size-huge: 42px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  background-color: #fff;
+  margin: 0;
+  width: var(--max-width);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  height: 209px;
+  background-color: transparent;
+}
+
+header .logo_block {
+  heigth: 140px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: blue solid 2px;
+}
+
+header .logo_img_block {
+  padding: 15px;
+  border-radius: 0 0 40px 40px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+header .site_title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 1.8;
+}
+
+header .header_btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 10px;
+}
+
+header .header_btns button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: #fff;
+}
+
+img.home_banner_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: 50% 50%;
+  border: 2px solid red;
+  z-index: -1;
+}
+
+.home_banner_container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.home_banner_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.home_banner_container .banner_title {
+  font-size: 74px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.home_banner_container .banner_description {
+  font-size: var(--font-size-medium);
+  color: #fff;
+  line-height: 2;
+}
+
+.home_banner_container .banner_btn {
+  outline: none;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 15px 44px;
+  font-family: inherit;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 35px;
+  text-transform: uppercase;
+  durcor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  word-break: break-word;
+}

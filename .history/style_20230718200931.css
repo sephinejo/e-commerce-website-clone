@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --width-max: 100vw;
+  --width-content: 280px;
+  --font-family-primary: 'Urbanist', sans-serif;
+  --font-color-primary: #333;
+  --font-color-secondary: #999;
+  --font-size-small: 15px;
+  --font-size-normal: 16px;
+  --font-size-medium: 17px;
+  --font-size-large: 32px;
+  --font-size-huge: 42px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  background-color: #fff;
+  margin: 0 auto;
+  width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.dim_overlay {
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+header.background_img {
+  background: url('https://demo.vivathemes.com/vignette/wp-content/themes/vignette/assets/images/furniture.jpg')
+    no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+  /*  */
+  padding-bottom: 187px;
+}
+
+header .logo_block {
+  heigth: 148px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo_img_block {
+  width: 80px;
+  height: 90px;
+  padding: 25px 15px 15px;
+  border-radius: 0 0 40px 40px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+header .site_title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 1.8;
+}
+
+header .header_btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 10px;
+}
+
+header .header_btns button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  color: #fff;
+}
+
+header .header_btns .btns_left {
+  display: flex;
+}
+
+header .header_btns .btns_left .btn_navigation {
+  width: 42px;
+  hegiht: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-around;
+  border: 2px red solid;
+  padding: 0;
+}
+
+header .header_btns .btns_left .btn_navigation_top {
+  width: 42px;
+  border: 1px solid #fff;
+}
+
+header .header_btns .btns_left .btn_navigation_bottom {
+  width: 30px;
+  border-bottom: 2px solid #fff;
+}
+
+.home_banner_container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.home_banner_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.home_banner_container .banner_title {
+  font-size: 74px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.home_banner_container .banner_description {
+  font-size: var(--font-size-medium);
+  color: #fff;
+  line-height: 2;
+  font-weight: 499;
+}
+
+.home_banner_container .banner_btn {
+  outline: none;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 15px 44px;
+  font-family: inherit;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 35px;
+  text-transform: uppercase;
+  durcor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  word-break: break-word;
+}
+
+.home_magazines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0 0;
+  height: 280px;
+}
+
+.home_magazines p {
+  font-weight: 600;
+  font-size: var(--font-size-large);
+  color: var(--font-color-secondary);
+}

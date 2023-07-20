@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-family-primary: 'Urbanist', sans-serif;
+  --font-size-normal: 16px;
+  --font-size-huge: 42px;
+}
+
+* {
+  box-sizing: border-box;
+}
